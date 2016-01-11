@@ -1,0 +1,21 @@
+\name{wom}
+\alias{wom}
+\title{Week of month}
+\usage{
+  wom(x)
+}
+\arguments{
+  \item{x}{a vector of times/Dates, etc}
+}
+\value{
+  a vector of the week of month for each x
+}
+\description{
+  Get the week of the month - starting on Sunday - given a
+  generally recognized time/Date/etc. format.
+}
+\examples{
+dates <- Sys.Date() + 1:30
+data.frame(dates = dates, wom = wom(dates))
+}
+

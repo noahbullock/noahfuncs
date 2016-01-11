@@ -1,0 +1,23 @@
+\name{rstring}
+\alias{rstring}
+\title{Random string generator}
+\usage{
+  rstring(size = 14, times = 1,
+    set = c(LETTERS, letters, 0:9))
+}
+\arguments{
+  \item{size}{the string length}
+
+  \item{times}{the number of strings to create}
+
+  \item{set}{the set of possible values to use}
+}
+\description{
+  Generate random strings, as for a password
+}
+\examples{
+set.seed(40)
+rstring(size=20, times=4)
+set.seed(sample(2^31, size=1))
+}
+
